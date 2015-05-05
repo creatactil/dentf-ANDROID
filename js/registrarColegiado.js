@@ -82,7 +82,7 @@ function registrarColegiado() {
 			
             }
 			
-		var n = xnumero.length;
+		/*var n = xnumero.length;
 		if(n == 1){
 			xnumero = "38000"+xnumero;
 		}else if(n == 2){
@@ -91,7 +91,7 @@ function registrarColegiado() {
 			xnumero = "380"+xnumero;
 		}else{
 			xnumero = "38"+xnumero;
-		}
+		}*/
 		
 		
   }

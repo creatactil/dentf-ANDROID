@@ -11,7 +11,7 @@ function mostrarDatos(){
 	var vcorreo = localStorage.correo;
 	var vpass = localStorage.pass;
 	
-	vnumero = vnumero.slice(-4);
+	
 	
 	$("#numero").val(vnumero);
 	$("#nombre").val(vnombre);
