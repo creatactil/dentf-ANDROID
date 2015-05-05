@@ -85,6 +85,6 @@ function abrirweb(ruta){
 	
 	var xruta = ruta;
 	
-	window.open(xruta,'_blank','location=no','closebuttoncaption=Return');
+	window.open(xruta,'_system','location=no','closebuttoncaption=Return');
 	
 	}
