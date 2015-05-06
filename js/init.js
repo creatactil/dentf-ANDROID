@@ -10,7 +10,7 @@ function init(){
 	globo();
 	onLoad();
 	
-	cargaweb();
+	//cargaweb();
 	
 	if ((typeof xnumero == 'undefined') || (xnumero == "")){
 		
