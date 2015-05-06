@@ -7,6 +7,8 @@ function registrarColegiado() {
 				var xtelefono = $("#telefono").val();
 				var xcorreo = $("#correo").val();
 				var xpa1 = $("#pa1").val();
+				var xisla = $("#isla").val();
+				
 				var xregid = $("#regId").val();
 				
 					
@@ -41,6 +43,10 @@ function registrarColegiado() {
 		document.formulario1.pa1.focus();
 		return false;
 		
+		}else if(document.formulario1.isla.value.length == ""){
+		alert("Elija su isla");
+		document.formulario1.isla.focus();
+		return false;
 		
 		}else		
 			
@@ -52,7 +58,7 @@ function registrarColegiado() {
 		   $.ajax({
            type: "POST",
            url: "http://app.dentef.com/php/registrocolegiado.php",
-           data: ({numero: xnumero, nombre: xnombre, apellidos: xapellidos, telefono: xtelefono, correo: xcorreo, regid: xregid, pa1: xpa1}),
+           data: ({numero: xnumero, nombre: xnombre, apellidos: xapellidos, telefono: xtelefono, correo: xcorreo, isla: xisla, regid: xregid, pa1: xpa1}),
                       cache: false,
                       dataType: "text",
                       success: onSuccess
