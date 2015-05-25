@@ -233,7 +233,7 @@ function descargarArchivo(nombre){
 					
 					abrirfichero(uri);   //modificacion por path  
 					
-                    path = dir.toURL() + '/' + filename;//AQUI ES EL CAMBIO de fullpath por toURL()
+                    path = dir.toInternalURL() + '/' + filename;//AQUI ES EL CAMBIO de fullpath por toURL()
 					
                     var fileTransfer = new FileTransfer();
 
