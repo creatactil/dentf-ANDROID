@@ -57,9 +57,16 @@
 	background-image: url(imgportada/cabecera.png);
 	text-shadow: 0  0px  0  #f3f3f3
 }
+.globo{
+	margin-top:-20px;
+	float:left;
+	width:14px;
+	text-decoration: none;
+	}
 </style>
 <script src="js/borrafavorito.js"></script>
 <script src="js/borrarmensaje.js"></script>
+<script src="js/desconectar.js"></script>
 <!--<script src="js/cargaweb.js"></script> -->
 
 <script src="js/favorito.js"></script>
@@ -92,6 +99,7 @@
   <div data-role="header" style="background-image:url(imgportada/cabecera.png)">
     <label style="font-weight: bold; font-size: small; color: #fff; text-align: center; margin-top:6px" >COLEGIO OFICIAL DE DENTISTAS</label>
     <label style="font-weight: bold; font-size: x-small; color: #fff; text-align: center; margin-top:-5px">PROVINCIA DE SANTA CRUZ DE TENERIFE</label>
+  
   </div>
 	
   <div data-role="main" class="ui-content" >
@@ -152,7 +160,7 @@ App Diseñada por creaTáctil S.L.
         
       <label style="font-weight: bold; font-size: small; color: #fff; text-align: center; margin-top:6px;margin-left:25px">COLEGIO OFICIAL DE DENTISTAS</label> 
     <label style="font-weight: bold; font-size: x-small; color: #fff; text-align: center; margin-top:-5px; margin-left:25px">PROVINCIA DE SANTA CRUZ DE TENERIFE</label>
-        
+     <a href="" data-role="button" class="ui-btn-right" data-mini="true" data-icon="power" onClick="desconectar()" data-iconpos="notext"></a>   
     </div >
     
     <div data-role="main" class="ui-content" style="margin:0; padding:0; position:fixed; width:100%">
@@ -164,7 +172,7 @@ App Diseñada por creaTáctil S.L.
     <div data-role="navbar" >
     <ul>
     <li><a href="#" data-role="button" onClick="mostrarDatos()" data-icon="bullets" style="background-image:url(imgportada/cabecera.png)">Registro</a></li>
-    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;" >Circulares</a></li>
+    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img class="globo"  >Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
     <li><a href="#page15" data-role="button" data-transition="slide" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
     </ul>
@@ -216,7 +224,7 @@ App Diseñada por creaTáctil S.L.
         
        	<select name="isla" id="isla" data-native-menu="false" style="margin-left:1em; margin-right:1em;">
                
-          <option value="2" selected>Tenerife<option>
+          <option value="2" selected>Tenerife</option>
           <option value="3">La Gomera</option>
           <option value="4">El Hierro</option>
           <option value="5">La Palma</option>
@@ -344,7 +352,7 @@ App Diseñada por creaTáctil S.L.
     <div data-role="navbar" >
     <ul>
     <li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home" style="background-image:url(imgportada/cabecera.png)">Inicio</a></li>
-    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;">Circulares</a></li>
+    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img class="globo" >Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
     <li><a  href="#page15" data-role="button"  data-transition="slide" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
     </ul>
@@ -375,7 +383,7 @@ App Diseñada por creaTáctil S.L.
     <div data-role="navbar" >
     <ul>
     <li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home">Inicio</a></li>
-    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail"><img src="" class="globo" style="float:left; width:15px;">Circulares</a></li>
+    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail"><img class="globo" >Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star">Favoritos</a></li>
     <li><a href="" data-role="button" data-transition="slide" data-icon="navigation">Web</a></li> 
     </ul>
@@ -396,7 +404,7 @@ App Diseñada por creaTáctil S.L.
 	 <div data-role="content" id="ley">
      			<center>
             <div data-role="controlgroup" data-type="horizontal">
-             <a href="#pagina0" data-role="button" data-icon="back" style="background-image:url(imgportada/cabecera.png")>Cancelar</a>
+             <a href="#pagina0" data-role="button" data-icon="back" style="background-image:url(imgportada/cabecera.png)">Cancelar</a>
 			<a href="#page2" data-role="button" data-icon="check" style="background-image:url(imgportada/cabecera.png)">Aceptar</a>
             </div>
             </center>
@@ -463,7 +471,7 @@ La finalidad de la cesión es actualizar la base de datos del Colegio Oficial de
     <div data-role="navbar" >
     <ul>
     <li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home" style="background-image:url(imgportada/cabecera.png)">Inicio</a></li>
-    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;">Circulares</a></li>
+    <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img class="globo" >Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
     <li><a  href="#page15" data-role="button" data-transition="slide" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
     </ul>
@@ -576,7 +584,7 @@ La finalidad de la cesión es actualizar la base de datos del Colegio Oficial de
     	<div data-role="navbar" >
    			 <ul>
     			<li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home" style="background-image:url(imgportada/cabecera.png)">Inicio</a></li>
-   				 <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;" >Circulares</a></li>
+   				 <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img class="globo"  >Circulares</a></li>
     			<li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
     			<li><a href="#page5" data-role="button" data-transition="slide" data-icon="info" style="background-image:url(imgportada/cabecera.png)">Ayuda</a></li>
     		</ul>

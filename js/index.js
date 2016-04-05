@@ -53,7 +53,7 @@ var app = {
         var pushNotification = window.plugins.pushNotification;
         if (device.platform == 'android' || device.platform == 'Android') {
             //alert("Llamada a ANDROID");
-            //tu Project ID aca!!
+            //tu Project ID aca OJO ESTE ES EL DEL DENTISTAS!!
             pushNotification.register(this.successHandler, this.errorHandler,{"senderID":"610359239399","ecb":"app.onNotificationGCM"});
         }
         else {
