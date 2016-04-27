@@ -1,4 +1,6 @@
 function crearLista() {
+	
+		setTimeout('comprobarid()',8000);
 				
     	var xnumero = localStorage.numero;
 		$.mobile.changePage("#page4", {transition: "slide"},
